@@ -9,9 +9,11 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <x-primary-button>
-                        ボタン
-                    </x-primary-button>
+                    <a href="{{ route('post.index')}}">
+                        <x-primary-button>
+                            投稿一覧
+                        </x-primary-button>
+                    </a>
                 </div>
             </div>
         </div>
