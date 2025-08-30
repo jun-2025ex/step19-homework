@@ -11,6 +11,13 @@
                 {{session('message')}}
             </div>
         @endif
+
+        <a href="{{ route('post.create')}}">
+            <x-primary-button class="mt-4">
+                投稿作成
+            </x-primary-button>
+        </a>
+
         @foreach ($posts as $post)
             <div class="mt-4 p-8 bg-white w-full rounded-2xl">
                 <h1 class="p-4 text-lg font-semibold">

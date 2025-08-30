@@ -11,6 +11,13 @@
                 {{session('message')}}
             </div>
         @endif
+
+        <a href="{{ route('post.index')}}">
+            <x-primary-button class="mt-4">
+                投稿一覧に戻る
+            </x-primary-button>
+        </a>
+        
         <form method="POST" action="{{ route('post.store') }}">
             @csrf
             <div class="mt-8">
@@ -25,7 +32,7 @@
                 <textarea name="body" class="w-auto py-2 border rounded-md" id="body" cols="30" rows="5"></textarea>
             </div>
 
-            <x-primary-button>
+            <x-primary-button class="mt-4">
                 送信
             </x-primary-button>
        

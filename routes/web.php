@@ -16,7 +16,8 @@ Route::get('/dashboard', function () {
 Route::get('/test', [TestController::class, 'test'])
 ->name('test');
 
-Route::get('/post/create', [PostController::class, 'create']);
+Route::get('/post/create', [PostController::class, 'create'])
+->name('post.create');
 
 Route::get('/post', [PostController::class, 'index'])
 ->name('post.index');
